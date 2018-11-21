@@ -1,0 +1,7 @@
+# python cache
+*pyc
+__pycache__
+
+# build files
+build/
+doc/source/reference/generated
