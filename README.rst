@@ -40,7 +40,7 @@ To use the class import it to your code and call before start plotting::
 
   from mpl2tex import RcParams
 
-  RcParamsSetup(width, fontsize, ratio, serif, linewidth, bw)
+  RcParams()
 
 To include the figure in your TeX document save it as ``pgf`` and write in
 your TeX code:
