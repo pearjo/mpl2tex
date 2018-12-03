@@ -35,16 +35,17 @@ class RcParams(object):
 
     """
 
-    def __init__(self, width=1.0, columnwidth=345, fontsize=10, ratio='gr',
-                 serif=True, bw=False, marker=False):
+    def __init__(self, width=1.0, columnwidth=345, fontsize=10, linewidth=0.4,
+                 ratio='gr', serif=True, bw=False, marker=False):
         self.width = width
         self.columnwidth = columnwidth
         self.fontsize = float(fontsize)
         self.ratio = ratio
         self.serif = serif
-        self.linewidth = 0.4
+        self.linewidth = linewidth
         self.everytick = 0.2
         self.everyaxisgrid = 0.2
+        self.everyaxis = 0.4
         self.bw = bw
         self.marker = marker
 
@@ -66,8 +67,8 @@ class RcParams(object):
                  'grid.alpha': '0.25',
                  'grid.color': '000000',
                  'grid.linewidth': self.everyaxisgrid,
-                 'axes.linewidth': self.linewidth,
-                 'patch.linewidth': self.linewidth,
+                 'axes.linewidth': self.everyaxis,
+                 'patch.linewidth': self.everyaxis,
                  'font.size': self.fontsize,
                  'axes.titlesize': self.fontsize,
                  'axes.labelsize': self.fontsize,
