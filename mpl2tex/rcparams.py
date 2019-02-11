@@ -36,13 +36,15 @@ class RcParams(object):
     """
 
     def __init__(self, width=1.0, columnwidth=345, fontsize=10, linewidth=0.4,
-                 ratio='gr', serif=True, bw=False, marker=False):
+                 markeredgewidth=0.0, ratio='gr', serif=True, bw=False,
+                 marker=False):
         self.width = width
         self.columnwidth = columnwidth
         self.fontsize = float(fontsize)
         self.ratio = ratio
         self.serif = serif
         self.linewidth = linewidth
+        self.markeredgewidth = markeredgewidth
         self.everytick = 0.2
         self.everyaxisgrid = 0.2
         self.everyaxis = 0.4
@@ -80,7 +82,7 @@ class RcParams(object):
                  'ytick.minor.width': self.everytick,
                  'figure.figsize': self.figsize,
                  'figure.autolayout': True,
-                 'lines.markeredgewidth': 0.0,
+                 'lines.markeredgewidth': self.markeredgewidth,
                  'lines.linewidth': self.linewidth,
                  'legend.edgecolor': '0.0',
                  'legend.fancybox': False,
