@@ -76,6 +76,8 @@ class RcParams(object):
                  'axes.labelsize': self.fontsize,
                  'xtick.labelsize': self.fontsize,
                  'ytick.labelsize': self.fontsize,
+                 'ytick.direction': 'in',
+                 'xtick.direction': 'in',
                  'xtick.major.width': self.everytick,
                  'xtick.minor.width': self.everytick,
                  'ytick.major.width': self.everytick,
