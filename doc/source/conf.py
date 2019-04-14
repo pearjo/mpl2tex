@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
-from mpl2tex import __version__
 sys.path.insert(0, os.path.abspath('../../'))
+
+from mpl2tex import __version__
 
 # -----------------------------------------------------------------------------
 # General configuration
