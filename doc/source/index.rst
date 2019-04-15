@@ -1,4 +1,4 @@
-.. mpl2tex documentation master file
+.. _index:
 
 .. include:: ../../README.rst
   :start-after: _intro:
@@ -11,8 +11,8 @@
    usage.rst
    example.rst
 
-API documentation
-=================
+Module
+======
 
 .. autosummary::
    :toctree: reference

@@ -23,6 +23,10 @@ Getting started
 Installing mpl2tex
 ==================
 
+Clone the repository from GitHub by::
+
+  git clone https://github.com/pearjo/mpl2tex.git
+
 In order to use the Python module you need the ``matplotlib`` package.
 
 Install mpl2tex by doing::
@@ -64,38 +68,3 @@ save the figure not in your document's root directory you can use the
     \import{<path to file>}{<filename>.pgf}
     \caption{Sinus and cosinus function generated with Matplotlib and mpl2tex}
   \end{figure}
-
-.. _mpl2tex_help:
-
-Help in Python
---------------
-
-If you are running IPython, you can get direct help for the modules.
-
-.. sourcecode:: python
-
-    >>> import mpl2tex
-    >>> help(mpl2tex.RcParams)
-    Help on class RcParams in module mpl2tex.rcparams:
-
-    class RcParams(builtins.object)
-     |  RcParams(width=1.0, columnwidth=345, fontsize=10, ratio='gr', serif=True, bw=False, marker=False)
-     |
-     |  Generate rcParams for matplotlib.
-     |
-     |  Updates the matplotlibrc for best export to LaTeX.
-
-
-.. _users_guide:
-
-
-User's Guide
-============
-
-For a full documentation change into `doc` and build the documentation for
-example as html.
-
-.. sourcecode:: bash
-
-    $ cd doc/
-    $ make html

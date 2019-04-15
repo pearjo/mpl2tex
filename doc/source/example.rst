@@ -16,7 +16,7 @@ To plot the sin and cos function write::
   import numpy as np
   from mpl2tex import RcParams
 
-  RcParams()  # set the figure parameter
+  RcParams(bw=True)  # set the figure parameter
 
   x = np.linspace(0, 2*np.pi, 100)
   sin = np.sin(x)
@@ -36,7 +36,7 @@ To plot the sin and cos function write::
     import numpy as np
     from mpl2tex import RcParams
 
-    RcParams()  # set the figure parameter
+    RcParams(bw=True)  # set the figure parameter
 
     x = np.linspace(0, 2*np.pi, 100)
     sin = np.sin(x)
