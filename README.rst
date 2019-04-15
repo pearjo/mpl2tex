@@ -1,5 +1,8 @@
 .. _intro:
 
+.. image:: https://readthedocs.org/projects/mpl2tex/badge/?version=latest
+   :target: https://mpl2tex.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
 
 ===========================================================
 **mpl2tex** - Configure Matplotlib for better LaTeX export.
